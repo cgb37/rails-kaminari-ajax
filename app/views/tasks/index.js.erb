@@ -1,0 +1,3 @@
+
+$('#tasks').html('<%= escape_javascript render(@tasks) %>');
+$('#paginator').html('<%= escape_javascript(paginate(@tasks, :remote => true).to_s) %>');
